@@ -21,14 +21,6 @@
     "docs",
     "reference"
   ],
-  "homepage": "https://github.com/pantharshit00/prisma-docs-generator",
-  "repository": {
-    "url": "git@github.com:pantharshit00/prisma-docs-generator.git"
-  },
-  "bugs": {
-    "email": "pantharshit00@gmail.com",
-    "url": "https://github.com/pantharshit00/prisma-docs-generator/issues"
-  },
   "dependencies": {
     "@prisma/generator-helper": "^3.1.1",
     "@prisma/sdk": "^3.1.1",
