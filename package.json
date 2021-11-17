@@ -59,7 +59,7 @@
     "generate": "prisma generate",
     "clean": "rimraf dist && rimraf styles_generator/dist && rimraf src/styles/main.css",
     "build:gen": "tsc -d && cpy src/styles dist/styles",
-    "build:styles": "cd styles_generator && npm run build && cpy ./dist/main.css ../src/styles/",
+    "build:styles": "cd styles_generator && npm install && npm run build && cpy ./dist/main.css ../src/styles/",
     "build": "npm run build:styles && npm run build:gen",
     "test": "jest",
     "format": "prettier --ignore-path .gitignore src/**/*.ts --write"
