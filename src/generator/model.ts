@@ -96,7 +96,7 @@ export default class ModelGenerator
     return `
     <tr id="${`model-${modelName}-${field.name}`}">
       <td class="px-4 py-2 border">
-       ${field.name} 
+       ${field.name}
       </td>
       <td class="px-4 py-2 border">
        ${
@@ -172,7 +172,7 @@ export default class ModelGenerator
                           .join(' | ')}
                         </td>
                         <td class="px-4 py-2 border">
-                         ${opK.required ? '<b>Yes</b>' : 'No'} 
+                         ${opK.required ? '<b>Yes</b>' : 'No'}
                         </td>
                       </tr>
                       `
@@ -248,17 +248,6 @@ export default class ModelGenerator
                       .join('')}
                     </tbody>
                   </table>
-                </div>
-            </div>
-            <hr class="my-8">
-              <div class="px-4 mt-4">
-                <h3 class="mb-2 text-xl" id="model-${
-                  model.name
-                }-operations">Operations</h3>
-                <div class="px-2 mb-4">
-                  ${model.operations
-                    .map((op) => this.getModelOperationMarkup(op, model.name))
-                    .join(`<hr class="my-4">`)}
                 </div>
             </div>
           </div>

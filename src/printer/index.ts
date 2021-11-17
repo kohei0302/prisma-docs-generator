@@ -71,7 +71,6 @@ export default class HTMLPrinter implements Generatable<DMMFDocument> {
       </div>
       <div class="w-full p-4 bg-white">
         ${modelGen.toHTML()}
-        ${typeGen.toHTML()}
       </div>
       <div>
       </div>
