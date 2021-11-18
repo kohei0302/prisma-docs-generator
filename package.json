@@ -37,7 +37,13 @@
     "kleur": "^4.1.4",
     "meow": "^9.0.0",
     "pluralize": "^8.0.0",
-    "prismjs": "^1.25.0"
+    "prismjs": "^1.25.0",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
     "@prisma/client": "^3.1.1",
@@ -59,7 +65,7 @@
     "generate": "prisma generate",
     "clean": "rimraf dist && rimraf styles_generator/dist && rimraf src/styles/main.css",
     "build:gen": "tsc -d && cpy src/styles dist/styles",
-    "build:styles": "cd styles_generator && npm install && npm run build && cpy ./dist/main.css ../src/styles/",
+    "build:styles": "cd styles_generator && npm run build && cpy ./dist/main.css ../src/styles/",
     "build": "npm run build:styles && npm run build:gen",
     "prepare": "npm run build",
     "test": "jest",

@@ -286,7 +286,7 @@ export default class ModelGenerator
       return {
         name: field.name,
         type: this.getFieldType(field),
-        bareTypeName: field.type,
+        bareTypeName: String(field.type),
         documentation: (field as any).documentation,
         directives: this.getFieldDirectives(field),
         required: field.isRequired,
@@ -295,7 +295,7 @@ export default class ModelGenerator
   }
 
   getFieldType(field: DMMF.Field): string {
-    let name = field.type;
+    let name = String(field.type);
     if (!field.isRequired && !field.isList) {
       name += '?';
     }
